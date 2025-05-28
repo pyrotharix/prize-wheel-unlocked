@@ -1,12 +1,12 @@
-// Сохраняем реферальный код из URL в localStorage
+// src/main.tsx
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+
 const urlParams = new URLSearchParams(window.location.search);
-const refCode = urlParams.get('ref');
-if (refCode) {
-  localStorage.setItem('referral_code', refCode);
+const ref = urlParams.get("ref");
+if (ref) {
+  localStorage.setItem("referral_code", ref);
 }
 
-import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
-
-createRoot(document.getElementById("root")!).render(<App />);
+ReactDOM.createRoot(document.getElementById("root")!).render(<App />);

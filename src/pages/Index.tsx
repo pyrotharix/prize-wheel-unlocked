@@ -7,7 +7,7 @@ import { RegistrationModal } from '../components/RegistrationModal';
 import { ReferralTracker } from '../components/ReferralTracker';
 import { DeliveryForm } from '../components/DeliveryForm';
 import { Button } from '@/components/ui/button';
-import { MessageSquare, Share2 } from 'lucide-react';
+import { MessageSquare } from 'lucide-react';
 
 const Index = () => {
   const [isRegistered, setIsRegistered] = useState(false);
